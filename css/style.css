@@ -1,0 +1,72 @@
+/* mengatur halaman */
+body {
+  background-color: beige;
+  padding: 70px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+/* desain form */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+/* desain button */
+button {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  height: 25px;
+  margin-bottom: 3px;
+}
+
+/* pengaturan form input */
+input {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 5px;
+}
+
+/* desain huruf s */
+.bentuk-suhu {
+  font-weight: bold;
+  font-style: italic;
+  font-size: large;
+}
+
+/* desain suhu yang agak kebawah */
+.derajat-bawah {
+  vertical-align: sub;
+}
+
+/* desain footer */
+footer {
+  text-align: center;
+  font-size: smaller;
+  margin-top: 0px;
+}
+
+/* agar responsif */
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

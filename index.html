@@ -6,5 +6,83 @@
     <title>Document Faisal</title>
     <link rel="stylesheet" href="css\style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Kalkulator Konversi Suhu</h1>
+    </header>
+
+    <main>
+      <!-- form konten -->
+      <section>
+        <!-- intruksi -->
+        <article>
+          <p>
+            Masukkan suhu Celcius (&deg;C) ke kotak di bawah, lalu klik tombol
+            Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit
+            (&deg;F).
+          </p>
+        </article>
+
+        <!-- inputan suhu -->
+        <form action="">
+          <div>
+            <label for="">Celcius (&deg;C):</label>
+            <input type="number" id="input-suhu" cols="30" rows="10"></input>
+          </div>
+        </form>
+          <div class="button-container">
+            <button type="button" onclick="validateForm()">Konversi</button>
+            <button type="button" onclick="reset()">Reset</button>
+          </div>
+
+        <!-- hasil inputan -->
+        <div>
+          <label for="">Fahrenheit (&deg;F):</label>
+
+          <textarea name="" id="hasil-suhu" cols="30" rows="10" readonly></textarea>
+        </div>
+
+        <!-- cara kalkulus -->
+        <div>
+          <label for="">Cara Kalkulasi:</label>
+
+          <textarea name="" id="bagaimana-suhu" cols="30" rows="10" readonly></textarea>
+        </div>
+      </section>
+
+      <!-- form Penjelasan -->
+      <section>
+        <header>
+          <h2>Cara Konversi Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+        </header>
+        <hr />
+
+        <article>
+          <p>
+            Suhu <span class="bentuk-suhu">S</span> dalam derajat Fahrenheit
+            (&deg;F) sama dengan suhu <span class="bentuk-suhu">S</span> dalam
+            derajat Celsius (&deg;C) kali 9/5 tambah 32.
+          </p>
+          
+          <p>
+            <span class="bentuk-suhu">S</span><span class="derajat-bawah">(&deg;F)</span> = (<span class="bentuk-suhu">S</span><span class="derajat-bawah">(&deg;C)</span> x 9/5 ) + 32
+          </p>
+          <p>atau</p>
+          <p>
+            <span class="bentuk-suhu">S</span><span class="derajat-bawah">(&deg;F)</span> = (<span class="bentuk-suhu">S</span><span class="derajat-bawah">(&deg;C)</span> x 1.8 ) + 32
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <br>
+    <hr>
+
+    <!-- ini footer -->
+    <footer>
+      <p>made by @LaSitenge</p>
+    </footer>
+
+    <script src="js\script.js"></script>
+  </body>
 </html>
